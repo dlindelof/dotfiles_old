@@ -1,0 +1,4 @@
+.mode column
+.head ON
+.separator ,
+PRAGMA foreign_keys=ON;

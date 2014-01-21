@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='scp://strider/Documents/NIQ/niq5-1.11.0/'
+let g:netrw_dirhist_2='scp://brugg/'
+let g:netrw_dirhist_3='/home/dlindelof/Work/endor/niq'
+let g:netrw_dirhist_4='/home/dlindelof/Work/endor/niq/tests'
+let g:netrw_dirhist_5='/home/dlindelof/Work/endor/niq/tests/data'

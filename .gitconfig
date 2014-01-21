@@ -1,0 +1,63 @@
+[user]
+	name = David Lindelöf
+	email = david.lindelof@neurobat.net
+[color]
+	ui = true
+[receive]
+	denyCurrentBranch = warn
+[core]
+	excludesfile = /home/dlindelof/.gitignore
+[alias]
+  # I like using the interactive mode to make complex commits
+  ai = add --interactive
+
+  # All the aliases relate to commits. Note that
+  # they are grouped by common prefixes, so I don't
+  # confuse what I want done by accident.
+  c = commit
+  # commit with a message
+  cm = commit -m
+  cma = commit -a -m
+  # amending the previous commit
+  ca = commit --amend
+  caa = commit -a --amend -C HEAD
+
+  # reset
+  ## soft resets
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  ## hard resets
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
+
+  # shortcuts for commands
+  s = status
+  d = diff
+  a = add
+  co = checkout
+  b = branch
+  l = log
+  f = fetch
+  fap = fetch --all -p
+  r = reset
+  p = push
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+  su = submodule update
+
+[sendemail]
+  smtpencryption = tls
+  smtpserver = smtp.gmail.com
+  smtpuser = d.lindelof@gmail.com
+  smtpserverport = 587
+
+[status]
+	showUntrackedFiles = no
+[push]
+	default = simple
+[merge]
+	ff = false

@@ -1,0 +1,24 @@
+# ~/.tmuxinator/niq.yml
+
+name: niq
+root: ~/Work/niq
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - cgdb -d platform/ecos/gnutools/arm-eabi/bin/arm-eabi-gdb
+        - minicom
+        - openocd --file ./utils/openocd.cfg

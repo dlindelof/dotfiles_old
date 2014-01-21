@@ -1,0 +1,79 @@
+\author{David Lindel\"of}
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage[pdftex]{color}
+\usepackage{verbatim}
+%\usepackage{pdflscape}
+\usepackage[figuresright]{rotating} % Rotate always counterclockwise
+\usepackage{subfigure}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsbsy}             % For \boldsymbol command
+%\usepackage{titlefoot}          % defines \keywords{} command (DOESNT WORK
+                                %WITH KOMA SCRIPT TITLES
+\usepackage{endnotes}
+%\usepackage{chicago}
+\usepackage[round]{natbib}      % For citations
+\usepackage{textcomp}
+\usepackage{tikz}               % For flowcharts
+\usepackage{fancyvrb}           % Better verbatim environment
+%\usepackage[pdftex]{changebar}  % Changebars
+\usepackage{multirow}           % Table cells that span multiple rows
+\usepackage{overpic}            % Superpose text on picture
+\usepackage{array}              % Allow {tabular}{><}
+\usepackage{gensymb}            % \degree, math and text mode
+\usepackage{booktabs}           % Publication-quality tables
+\usepackage{enumitem}           % Something in the CV
+
+
+\newlength{\picwidth}
+\setlength{\picwidth}{.8\textwidth}
+
+\newcommand{\prog}[1]{\textsc{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\pc}[1]{\code{#1}}
+\newcommand{\fig}[1]{\includegraphics[width=\picwidth]{#1}}
+\newcommand{\eibserver}{\prog{Eibserver}}
+\newcommand{\daysim}{\prog{Daysim}}
+\newcommand{\matlab}{\prog{Matlab}}
+\newcommand{\radiance}{\prog{Radiance}}
+\newcommand{\simbad}{\prog{Simbad}}
+\newcommand{\lesoeib}{\code{leso\_eib}}
+%\newcommand{\Pr}{\mathbb{P}}
+\graphicspath{{./fig/}}
+\newcommand{\evg}{\ensuremath{E_\mathrm{g\,hor}}}
+\newcommand{\eeg}{\ensuremath{I_\mathrm{g\,hor}}}
+\newcommand{\evv}{\ensuremath{E_\mathrm{g\,vert}}}
+\newcommand{\eev}{\ensuremath{I_\mathrm{g\,vert}}}
+\newcommand{\eed}{\ensuremath{I_\mathrm{diff\,hor}}}
+\newcommand{\ees}{\ensuremath{I_\mathrm{beam}}}
+\newcommand{\een}{\ensuremath{I_\mathrm{dir\,hor}}}
+\newcommand{\eh}{\ensuremath{E_\mathrm{in\,hor}}}
+
+%\DeclareGraphicsRule{.png}{eps}{.png.bb}{`convert #1 'eps:-'}
+
+% This is how short digression are defined in the KOMA guide
+\newenvironment{Explain}{%
+  \par\sffamily\small
+}{%
+  \normalcolor\par
+}
+
+% Define command to print DRAFT PAPER on each page
+\newcommand{\draft}{
+   \usepackage{eso-pic}
+
+   \AddToShipoutPicture{\resizebox{0.9\pdfpagewidth}{0.9\pdfpageheight}
+   {\rotatebox{60}{\color[rgb]{1,.9,.9}\hspace*{5mm}\textsc{DRAFT
+PAPER}}}}
+
+}
+
+
+%%% Local Variables: 
+%%% mode: plain-tex
+%%% TeX-master: t
+%%% End: 
