@@ -1,1 +1,2 @@
-Dropbox/.Rprofile
+options(defaultPackages = c(getOption("defaultPackages"), "lattice"))
+
