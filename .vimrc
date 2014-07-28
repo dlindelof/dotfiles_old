@@ -100,6 +100,8 @@ set number
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set ignorecase
+set smartcase
 
 let blogit_format='pandoc --from markdown --to html --no-wrap'
 
