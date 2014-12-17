@@ -93,6 +93,6 @@ export PATH
 
 export PGDATABASE=monitoring
 export PGHOST=5.5.32.26
-export PGUSER=monitoringuser
+export PGUSER=meyrin
 
 set -o vi
