@@ -102,6 +102,7 @@ set shiftwidth=2
 set softtabstop=2
 set ignorecase
 set smartcase
+set autoread
 
 let blogit_format='pandoc --from markdown --to html --no-wrap'
 
@@ -116,4 +117,5 @@ execute pathogen#infect()
 
 " Enable matchit plugin
 runtime macros/matchit.vim
+
 
