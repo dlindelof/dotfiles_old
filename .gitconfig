@@ -61,3 +61,5 @@
 	default = simple
 [merge]
 	ff = false
+[diff]
+	tool = vimdiff
