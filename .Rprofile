@@ -1,4 +1,4 @@
-options(defaultPackages = c(getOption("defaultPackages"), "lattice"))
+options(defaultPackages = c(getOption("defaultPackages"), "lattice", "devtools", "knitr"))
 
 beamer.theme <- list(add.line         = list(lwd = 5),
                      axis.line        = list(lwd = 5),
