@@ -92,7 +92,10 @@ export PATH
 #export CC="c99"
 
 export PGDATABASE=monitoring
-export PGHOST=5.5.32.26
+export PGHOST=172.20.0.26
 export PGUSER=meyrin
 
 set -o vi
+
+# added by travis gem
+[ -f /Users/dlindelof/.travis/travis.sh ] && source /Users/dlindelof/.travis/travis.sh
