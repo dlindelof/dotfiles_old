@@ -99,21 +99,30 @@ endif
 set number
 set expandtab
 set shiftwidth=2
+set tabstop=4
 set softtabstop=2
 set ignorecase
 set smartcase
 set autoread
+set cursorline
+set autowrite
+set wildmode=full
+set lazyredraw
+set showmatch
+set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+set foldmethod=indent
 
 let blogit_format='pandoc --from markdown --to html --no-wrap'
 
-set autowrite
 
-" Enable bash-like completion"
-set wildmode=longest,list
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 execute pathogen#infect()
+
+colorscheme badwolf
 
 " Enable matchit plugin
 runtime macros/matchit.vim
