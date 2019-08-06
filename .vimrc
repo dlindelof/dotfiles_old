@@ -120,11 +120,3 @@ let blogit_format='pandoc --from markdown --to html --no-wrap'
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
-execute pathogen#infect()
-
-colorscheme badwolf
-
-" Enable matchit plugin
-runtime macros/matchit.vim
-
-
